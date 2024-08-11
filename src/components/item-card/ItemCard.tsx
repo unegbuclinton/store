@@ -55,7 +55,10 @@ const ItemCard: React.FC<cardProp> = ({ size }) => {
         </p>
         <p className='font-bold text-base'>N500,000</p>
         <span className='mt-2 flex gap-2 items-center font-medium'>
-          <StoreIcon iconName='ratingIcon' /> (45)
+          {['1', '2', '3'].map((index) => (
+            <StoreIcon key={index} iconName='ratingIcon' />
+          ))}{' '}
+          (45)
         </span>
       </div>
     </div>
