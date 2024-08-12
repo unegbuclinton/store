@@ -4,7 +4,7 @@ import ItemCard from '../item-card/ItemCard'
 
 const SummerSales = () => {
   return (
-    <div className='bg-offWhite/75 px-20 py-24 flex justify-between items-center'>
+    <div className='bg-offWhite/75 px-20 py-24 flex justify-between items-center gap-3'>
       <CountDown />
       <div className='flex gap-8 justify-center mb-8'>
         {['1', '2'].map((index) => (

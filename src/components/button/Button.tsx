@@ -3,7 +3,8 @@ import React from 'react'
 interface buttonInterface {
   children: React.ReactNode
   outline?: boolean
-  onClick: () => void
+  buttonStyles?: string
+  onClick?: () => void
   type: 'button' | 'submit' | 'reset'
   disabled?: boolean
 }
@@ -14,6 +15,7 @@ const Button: React.FC<buttonInterface> = ({
   onClick,
   type,
   disabled,
+  buttonStyles,
   ...rest
 }) => {
   const filledStyle = 'border-none bg-primaryColor text-white'
@@ -23,7 +25,7 @@ const Button: React.FC<buttonInterface> = ({
     <button
       className={`${
         outline ? outlineStyle : disabled ? disabledStyle : filledStyle
-      } px-12 py-2 font-normal outline-none rounded-lg`}
+      } px-12 py-2 font-normal outline-none rounded-lg ${buttonStyles}`}
       {...rest}
     >
       {children}

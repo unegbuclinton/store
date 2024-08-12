@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'logo-img1': "url('/login-img1.jpg')",
+        'logo-img2': "url('/login-img2.jpg')",
+        'logo-img3': "url('/login-img3.jpg')",
       },
     },
     colors: {
