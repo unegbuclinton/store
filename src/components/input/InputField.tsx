@@ -8,6 +8,7 @@ interface inputProp {
   value?: string
   id?: string
   inputStyles?: string
+  containerStyles?: string
   icon?: string
 }
 const InputField: React.FC<inputProp> = ({
@@ -17,11 +18,12 @@ const InputField: React.FC<inputProp> = ({
   value,
   id,
   inputStyles,
+  containerStyles,
   icon,
   ...rest
 }) => {
   return (
-    <div className='relative h-10 w-full'>
+    <div className={`relative h-10 ${containerStyles}`}>
       {icon && (
         <span className='absolute top-1/2 left-2 transform -translate-y-1/2'>
           <StoreIcon iconName={icon} />
