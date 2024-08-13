@@ -2,6 +2,7 @@ import React from 'react'
 import StoreIcon from '../storeIcon/StoreIcon'
 import InputField from '../input/InputField'
 import Button from '../button/Button'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -32,12 +33,16 @@ const Navbar = () => {
           Account
           <StoreIcon iconName='arrowDown' />
         </p>
-        <p className='flex items-center gap-1.5 cursor-pointer'>
+        <Link
+          href={'/cart'}
+          title='Cart'
+          className='flex items-center gap-1.5 cursor-pointer'
+        >
           <span>
             <StoreIcon iconName='cartIcon' />
           </span>
           Cart
-        </p>
+        </Link>
       </div>
     </nav>
   )
