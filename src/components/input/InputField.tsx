@@ -7,6 +7,7 @@ interface inputProp {
   onChange: () => void
   value?: string
   id?: string
+  inputStyles?: string
   containerStyles?: string
   icon?: string
 }
@@ -16,6 +17,7 @@ const InputField: React.FC<inputProp> = ({
   onChange,
   value,
   id,
+  inputStyles,
   containerStyles,
   icon,
   ...rest
@@ -31,7 +33,7 @@ const InputField: React.FC<inputProp> = ({
         type={type}
         className={`h-full w-full rounded-lg border outline-none border-grey/50 pr-4 ${
           icon ? 'pl-10' : 'pl-4'
-        }`}
+        } ${inputStyles}`}
         placeholder={placeholder}
         {...rest}
       />
