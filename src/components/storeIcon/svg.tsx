@@ -175,6 +175,66 @@ export const icons: Record<string, React.ReactNode> = {
       />
     </svg>
   ),
+  minus: (
+    <svg
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M16 12L8 12'
+        stroke='black'
+        stroke-width='1.2'
+        stroke-linecap='round'
+      />
+    </svg>
+  ),
+  plusIcon: (
+    <svg
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M12 8L12 16'
+        stroke='black'
+        stroke-width='1.2'
+        stroke-linecap='round'
+      />
+      <path
+        d='M16 12L8 12'
+        stroke='black'
+        stroke-width='1.2'
+        stroke-linecap='round'
+      />
+    </svg>
+  ),
+  cancelIcon: (
+    <svg
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        d='M18 6L6 18'
+        stroke='black'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+      <path
+        d='M6 6L18 18'
+        stroke='black'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      />
+    </svg>
+  ),
   dot1: (
     <svg
       width='52'
