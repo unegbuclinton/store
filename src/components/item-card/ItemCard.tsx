@@ -19,7 +19,7 @@ const ItemCard: React.FC<cardProp> = ({ size }) => {
           : size === 'small'
           ? small
           : 'max-w-[449px]'
-      } h-full rounded-[10px] bg-primaryColor/30`}
+      } h-fit rounded-[10px] bg-primaryColor/30`}
     >
       <div className='flex justify-end px-5 pt-3.5'>
         <span className='cursor-pointer'>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Button from '../button/Button'
 import StoreIcon from '../storeIcon/StoreIcon'
+import Link from 'next/link'
 
 const HeroSection = () => {
   return (
@@ -24,9 +25,11 @@ const HeroSection = () => {
           tenetur repellat nobis atque rem. Facere!
         </p>
         <div className='flex gap-6 mt-14'>
-          <Button type='button' onClick={() => null}>
-            Shop Now
-          </Button>
+          <Link href={'/dashboard'}>
+            <Button type='button' onClick={() => null}>
+              Shop Now
+            </Button>
+          </Link>
           <Button outline type='button' onClick={() => null}>
             Explore Deals
           </Button>
