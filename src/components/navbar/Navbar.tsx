@@ -7,9 +7,9 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <nav className='flex items-center justify-between'>
-      <span>
+      <Link href={'/'}>
         <StoreIcon iconName='logo' />
-      </span>
+      </Link>
       <div className='max-w-[700px] flex gap-2 w-full'>
         <div className='flex-1'>
           <InputField
