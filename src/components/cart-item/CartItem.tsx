@@ -31,15 +31,17 @@ const CartItem = ({ onCancel }: { onCancel: () => void }) => {
         </div>
       </div>
 
-      <div className='flex items-center gap-6'>
+      <div className='flex items-center gap-6 ml-24'>
         <div className='flex items-center gap-2'>
-          <span className='cursor-pointer' onClick={decreaseCount}>
+          <button className='cursor-pointer' onClick={decreaseCount}>
             <StoreIcon iconName='minus' />
-          </span>
-          <p className='rounded-md border px-4 py-2'>{itemCount}</p>
-          <span className='cursor-pointer' onClick={increaseCount}>
+          </button>
+          <p className='rounded-md border w-10 h-10 flex justify-center items-center'>
+            {itemCount}
+          </p>
+          <button className='cursor-pointer' onClick={increaseCount}>
             <StoreIcon iconName='plusIcon' />
-          </span>
+          </button>
         </div>
         <p>$542</p>
         <span className='cursor-pointer' onClick={onCancel}>
