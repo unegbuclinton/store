@@ -19,14 +19,14 @@ const ItemCard: React.FC<cardProp> = ({ size }) => {
           : size === 'small'
           ? small
           : 'max-w-[449px]'
-      } h-fit rounded-[10px] bg-primaryColor/30`}
+      } h-fit rounded-[10px] bg-primaryColor/30 rounded-b-[10px]`}
     >
       <div className='flex justify-end px-5 pt-3.5'>
         <span className='cursor-pointer'>
           <StoreIcon iconName='cartIconLight' />
         </span>
       </div>
-      <div className=' p-5 rounded-t-[10px]'>
+      <div className='rounded-t-[10px]'>
         <Image
           alt='item-img'
           src={'/img.png'}
@@ -46,10 +46,10 @@ const ItemCard: React.FC<cardProp> = ({ size }) => {
           }
         />
       </div>
-      <div className='bg-white rounded-t-[10px] py-8 px-5 text-dark'>
+      <div className='bg-white rounded-t-[10px] py-8 px-5 text-dark rounded-b-[10px]'>
         <h3 className='text-dark/50 mb-2 font-bold'>Unisex</h3>
         <h4 className='font-medium text-lg'>Sketchers Don A5</h4>
-        <p className='my-2'>
+        <p className='my-2 text-sm'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex
           cumque porro magnam et velit dicta modi accusamus qui. Quos.
         </p>

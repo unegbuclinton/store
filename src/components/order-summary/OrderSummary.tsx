@@ -46,7 +46,7 @@ const OrderSummary = () => {
           <p>Total</p>
           <p>$2347</p>
         </div>
-        <Button type='button' onClick={() => null}>
+        <Button buttonStyles='w-full mt-8' type='button' onClick={() => null}>
           Checkout
         </Button>
       </div>

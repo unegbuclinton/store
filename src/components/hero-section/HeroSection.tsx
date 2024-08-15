@@ -8,15 +8,15 @@ const HeroSection = () => {
   return (
     <div className='flex items-center'>
       <div>
-        <h2 className='relative text-[72px] max-w-[624px] font-bold leading-[79px] text-[#424242] mb-6'>
+        <h2 className='relative text-[68px] max-w-[652px] font-bold leading-[79px] text-[#424242] mb-6'>
           <span className='absolute -top-2.5 -left-4'>
             <StoreIcon iconName='dot1' />
           </span>
-          <p className='z-10 relative'>
+          <p className='z-10 relative '>
             Level Up Your Style With Our Exclusive Kicks
           </p>
         </h2>
-        <p>
+        <p className='text-sm'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
           fuga, neque porro mollitia in velit tempora quasi. Vitae distinctio
           qui nam natus, blanditiis, impedit voluptates accusantium repudiandae
@@ -25,7 +25,7 @@ const HeroSection = () => {
           tenetur repellat nobis atque rem. Facere!
         </p>
         <div className='flex gap-6 mt-14'>
-          <Link href={'/dashboard'}>
+          <Link href={'/products'}>
             <Button type='button' onClick={() => null}>
               Shop Now
             </Button>

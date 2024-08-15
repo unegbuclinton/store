@@ -22,8 +22,8 @@ export default function Home() {
           <StoreIcon iconName='dot3' />
         </span>
       </div>
-      <Brand />
       <div className='px-20 pt-16'>
+        <Brand />
         <NewArrival />
       </div>
 

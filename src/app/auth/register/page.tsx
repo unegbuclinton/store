@@ -11,16 +11,9 @@ const Register = () => {
         <StoreIcon iconName='authLogo' />
       </span>
       <div className='flex mb-12'>
-        <Link href={'/auth/register'} className='text-3xl px-4 font-bold'>
-          Sign Up
-        </Link>
+        <p className='text-xl px-4 font-normal text-dark/50'>Sign In</p>
 
-        <Link
-          href={'/auth/login'}
-          className='text-3xl font-normal text-dark/50 border-l px-4'
-        >
-          Sign In
-        </Link>
+        <p className='text-xl border-l font-bold px-4'>Sign Up</p>
       </div>
 
       <form>
@@ -44,6 +37,7 @@ const Register = () => {
             onChange={() => null}
             type='text'
             placeholder='Verification code:'
+            containerStyles='flex-1'
           />
           <Button buttonStyles='text-nowrap' type='button' onClick={() => null}>
             Get code
@@ -54,6 +48,7 @@ const Register = () => {
             onChange={() => null}
             type='number'
             placeholder='Phone:'
+            containerStyles='flex-1'
           />
         </div>
         <div className='flex gap-8 mb-8'>
@@ -61,6 +56,7 @@ const Register = () => {
             onChange={() => null}
             type='password'
             placeholder='Password:'
+            containerStyles='flex-1'
           />
         </div>
         <div className='flex gap-8 mb-2'>
@@ -68,6 +64,7 @@ const Register = () => {
             onChange={() => null}
             type='password'
             placeholder='Confirm Password:'
+            containerStyles='flex-1'
           />
         </div>
         <p className='flex gap-2 items-center text-xs text-grey/40 mb-8'>
@@ -78,7 +75,7 @@ const Register = () => {
           Sign up
         </Button>
       </form>
-      <p className='text-center mt-6'>
+      <p className='text-center mt-6 text-sm'>
         Already have an account?{' '}
         <Link href={'/auth/login'} className='text-primaryColor font-medium'>
           Log in
