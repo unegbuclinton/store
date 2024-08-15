@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lora } from 'next/font/google'
 import Carousel from '@/components/carousel/Carousel'
 import StoreIcon from '@/components/storeIcon/StoreIcon'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Lora({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Fly kick authentication',

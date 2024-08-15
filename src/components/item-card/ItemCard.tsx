@@ -1,12 +1,14 @@
 import React from 'react'
 import StoreIcon from '../storeIcon/StoreIcon'
 import Image from 'next/image'
+import Link from 'next/link'
 
 interface cardProp {
   size?: 'medium' | 'small'
+  id: string
 }
 
-const ItemCard: React.FC<cardProp> = ({ size }) => {
+const ItemCard: React.FC<cardProp> = ({ size, id }) => {
   const medium = 'max-w-[379px]'
   const small = 'max-w-[300px]'
   const mediumImgeSize = { width: 380, height: 240 }
@@ -46,21 +48,23 @@ const ItemCard: React.FC<cardProp> = ({ size }) => {
           }
         />
       </div>
-      <div className='bg-white rounded-t-[10px] py-8 px-5 text-dark rounded-b-[10px]'>
-        <h3 className='text-dark/50 mb-2 font-bold'>Unisex</h3>
-        <h4 className='font-medium text-lg'>Sketchers Don A5</h4>
-        <p className='my-2 text-sm'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex
-          cumque porro magnam et velit dicta modi accusamus qui. Quos.
-        </p>
-        <p className='font-bold text-base'>N500,000</p>
-        <span className='mt-2 flex gap-2 items-center font-medium'>
-          {['1', '2', '3'].map((index) => (
-            <StoreIcon key={index} iconName='ratingIcon' />
-          ))}{' '}
-          (45)
-        </span>
-      </div>
+      <Link href={`products/${id}`}>
+        <div className='bg-white rounded-t-[10px] py-8 px-5 text-dark rounded-b-[10px]'>
+          <h3 className='text-dark/50 mb-2 font-bold'>Unisex</h3>
+          <h4 className='font-medium text-lg'>Sketchers Don A5</h4>
+          <p className='my-2 text-sm'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex
+            cumque porro magnam et velit dicta modi accusamus qui. Quos.
+          </p>
+          <p className='font-bold text-base'>N500,000</p>
+          <span className='mt-2 flex gap-2 items-center font-medium'>
+            {['1', '2', '3'].map((index) => (
+              <StoreIcon key={index} iconName='ratingIcon' />
+            ))}{' '}
+            (45)
+          </span>
+        </div>
+      </Link>
     </div>
   )
 }

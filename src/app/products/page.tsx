@@ -10,7 +10,6 @@ const Dashboard = () => {
   return (
     <main className='text-sm'>
       <div className='py-10 px-20'>
-        <Navbar />
         <Categories />
       </div>
       {/* <div className='bg-[#111827] text-white py-4 pl-20 mb-4'>
